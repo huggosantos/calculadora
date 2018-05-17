@@ -50,7 +50,7 @@ $http({
     $scope.success = true;
     $scope.Resultado=data;
     document.getElementById('nome').value =  $scope.Resultado ;
-    Materialize.toast('Soma Recebida', 7000)
+    Materialize.toast('Soma Recebida', 2000)
   }).
    error(function (data) {
     $scope.error = true;
@@ -81,7 +81,7 @@ $http({
     $scope.success = true;
     $scope.Resultado=data;
     document.getElementById('nome').value =  $scope.Resultado ;
-    Materialize.toast('Subtração Recebida ', 7000)
+    Materialize.toast('Subtração Recebida ', 2000)
   }).
    error(function (data) {
     $scope.error = true;
@@ -114,7 +114,7 @@ $http({
     $scope.success = true;
     $scope.Resultado=data;
     document.getElementById('nome').value =  $scope.Resultado ;
-    Materialize.toast('Multiplicaçao Realizada ', 7000)
+    Materialize.toast('Multiplicaçao Realizada ', 2000)
   }).
    error(function (data) {
     $scope.error = true;
@@ -146,7 +146,7 @@ $http({
     $scope.success = true;
     $scope.Resultado=data;
     document.getElementById('nome').value =  $scope.Resultado ;
-    Materialize.toast('Divisão Realizada ', 7000)
+    Materialize.toast('Divisão Realizada ', 2000)
   }).
    error(function (data) {
     $scope.error = true;
@@ -178,7 +178,7 @@ $http({
     $scope.success = true;
     $scope.Resultado=data;
     document.getElementById('nome').value =  $scope.Resultado ;
-    Materialize.toast('Potenciação Realizada ', 7000)
+    Materialize.toast('Potenciação Realizada ', 2000)
   }).
    error(function (data) {
     $scope.error = true;
@@ -209,7 +209,7 @@ $http({
     $scope.success = true;
     $scope.Resultado=data;
     document.getElementById('nome').value =  $scope.Resultado ;
-    Materialize.toast('Seno Realizada ', 7000)
+    Materialize.toast('Seno Realizada ', 2000)
   }).
    error(function (data) {
     $scope.error = true;
@@ -240,7 +240,7 @@ $http({
     $scope.success = true;
     $scope.Resultado=data;
     document.getElementById('nome').value =  $scope.Resultado ;
-    Materialize.toast('Coseno Realizada ', 7000)
+    Materialize.toast('Coseno Realizada ', 2000)
   }).
    error(function (data) {
     $scope.error = true;
@@ -271,7 +271,7 @@ $http({
     $scope.success = true;
     $scope.Resultado=data;
     document.getElementById('nome').value =  $scope.Resultado ;
-    Materialize.toast('Tangente Realizada ', 7000)
+    Materialize.toast('Tangente Realizada ', 2000)
   }).
    error(function (data) {
     $scope.error = true;
@@ -303,7 +303,7 @@ $http({
     $scope.success = true;
     $scope.Resultado=data;
     document.getElementById('nome').value =  $scope.Resultado ;
-    Materialize.toast('Resto Divisão Realizado ', 7000)
+    Materialize.toast('Resto Divisão Realizado ', 2000)
   }).
    error(function (data) {
     $scope.error = true;
@@ -334,7 +334,7 @@ $http({
     $scope.success = true;
     $scope.Resultado=data;
     document.getElementById('nome').value =  $scope.Resultado ;
-    Materialize.toast('Raiz Realizada ', 7000)
+    Materialize.toast('Raiz Realizada ', 2000)
   }).
    error(function (data) {
     $scope.error = true;
