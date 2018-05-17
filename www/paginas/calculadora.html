@@ -1,0 +1,118 @@
+<br>
+<div class="row" >
+  
+  <form class="col s12" id="formChamado" name="formChamado" ng-submit="salveSubmit()">
+       <div class="row">         
+          <input class="btn red right" value="C" type="reset" name="action">                    
+        </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="valor1" type="number" class="validate" ng-model="cal.valor1" ng-required="true">
+              <label for="valor1">Numero 1</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="valor2" type="number" class="validate" ng-model="cal.valor2" ng-required="true">
+              <label for="valor2">Numero 2</label>
+            </div>
+          </div>
+          
+         
+
+      <div class="row">  
+          <div class="col s4"> 
+                <button class="btn red" type="submit" name="action" ng-click="soma(cal)" ng-disabled="!formChamado.$valid">
+                    <a> 
+                        <i class="material-icons">add</i>
+                    </a> 
+                </button>
+          </div>
+          <div class="col s4"> 
+                <button class="btn red" type="submit" name="action" ng-click="multiplicacao(cal)" ng-disabled="!formChamado.$valid">
+                    <a> 
+                      <i class="material-icons">clear</i>
+                   </a> 
+               </button>
+          </div>
+          <div class="col s4"> 
+             <button class="btn red" type="submit" name="action" ng-click="subtracao(cal)" ng-disabled="!formChamado.$valid">
+                  <a> 
+                    <i class="material-icons">remove</i>
+                 </a> 
+             </button>
+          </div>
+      </div>
+
+      
+      <div class="row"> 
+           <div class="col s4"> 
+               <button class="btn red" type="submit" name="action" ng-click="div(cal)" ng-disabled="!formChamado.$valid">
+                   <a> /
+                     <i class="material-icons"></i>
+                   </a> 
+               </button>
+           </div>
+           <div class="col s4">
+                <button class="btn red" type="submit" name="action" ng-click="pot(cal)" ng-disabled="!formChamado.$valid">
+                  <a> x<sup>y</sup>
+                    <i class="material-icons"></i>
+                 </a> 
+               </button>
+            </div>
+            <div class="col s4">
+                <button class="btn red" type="submit" name="action" ng-click="mod(cal)"  ng-disabled="!formChamado.$valid">
+                  <a> Mod
+                     <i class="material-icons"></i>
+                  </a> 
+               </button>
+              </div>
+    </div>
+
+      <div class="row"> 
+          <div class="col s4">
+              <button class="btn red" type="submit" name="action" ng-click="seno(cal)" ng-disabled="cal.valor2">
+                 <a> sin
+                    <i class="material-icons"></i>
+                 </a> 
+             </button>
+          </div>
+          <div class="col s4">
+              <button class="btn red" type="submit" name="action" ng-click="coseno(cal)" ng-disabled="cal.valor2">
+                 <a> cos
+                    <i class="material-icons"></i>
+                 </a> 
+             </button>
+          </div>
+          <div class="col s4">
+             <button class="btn red" type="submit" name="action" ng-click="tangente(cal)" ng-disabled="cal.valor2">
+              <a> tan
+                   <i class="material-icons"></i>
+              </a> 
+             </button>
+         </div>
+      </div>
+       <div class="row"> 
+          <div class="col s4">
+              <button class="btn red" type="submit" name="action" ng-click="raiz(cal)" ng-disabled="cal.valor2">
+                 <a> 
+                    <i class="material-icons">check</i>
+                 </a> 
+             </button>
+          </div>
+        </div>
+
+      <div class="row">
+      <div class="input-field col s12" ng-controller="calculadora">
+        <input id="nome" type="number" ng-model="cal.Resultado"  ng-bind="cal.Resultado">
+      </div>
+  </div>
+
+
+</form> 
+
+
+  
+
+
